@@ -1,0 +1,29 @@
+//
+//  main.c
+//  09-3-2
+//
+//  Created by MacBook Air on 2023/11/05.
+//
+
+#include <stdio.h>
+#include <stdlib.h>
+#define N_STUDENT 5
+
+int main(int argc, const char * argv[]) {
+    int i;
+    int a[N_STUDENT] = {1, 2, 3, 4, 5};
+    int b[N_STUDENT] = {1, 2, 3, 4, 5};
+    int flag = 0;
+    
+    for(i=0;i<N_STUDENT;i++)
+    {
+        if (a[i]!=b[i])
+        {
+            printf("array a and b are not the same\n");
+        flag = 1;
+    }
+}
+if(flag == 0)
+            printf("array a and b are the same\n");
+return 0;
+}
